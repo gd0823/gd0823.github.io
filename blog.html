@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的博客 - gd0823</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>我的博客</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="blog.html">我的博客</a></li>
+                <li><a href="portfolio.html">个人作品</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- 第一篇博文：图文 -->
+        <div class="card">
+            <h3>第一篇博文：Hello World</h3>
+            <small>发布于 2025年1月1日</small>
+            <p>这是我的第一篇博客文章。在这里我可以写很长的文字。</p>
+            <!-- 插入图片示例 -->
+            <!-- <img src="assets/images/blog1.jpg" alt="博客配图" style="max-width:100%;"> -->
+        </div>
+
+        <!-- 第二篇博文：音乐 -->
+        <div class="card">
+            <h3>分享一首好听的音乐</h3>
+            <p>这是我最近喜欢的歌：</p>
+            <!-- 插入音频示例，需要把mp3放在 assets/media/ 下 -->
+            <audio controls>
+                <source src="assets/media/music.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放。
+            </audio>
+        </div>
+
+        <!-- 第三篇博文：视频 -->
+        <div class="card">
+            <h3>我的项目演示视频</h3>
+            <!-- 插入视频示例，需要把mp4放在 assets/media/ 下 -->
+            <video width="100%" controls>
+                <source src="assets/media/demo.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 gd0823</p>
+    </footer>
+</body>
+</html>
