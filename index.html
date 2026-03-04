@@ -3,44 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>高栋的个人主页</title>
+    <title>高栋 - 个人主页</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>欢迎来到 高栋 的个人主页</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">主页</a></li>
-                <li><a href="blog.html">我的博客</a></li>
-                <li><a href="portfolio.html">个人作品</a></li>
+    <!-- 全屏背景区域 -->
+    <section class="hero-section">
+        <div class="hero-background" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80');">
+            <div class="hero-overlay"></div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-brand">高栋</div>
+            <ul class="nav-menu">
+                <li><a href="#about">关于</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="portfolio.html">作品</a></li>
             </ul>
         </nav>
-    </header>
+        <div class="hero-content">
+            <h1 class="hero-title">高栋</h1>
+            <p class="hero-subtitle">探索技术 · 分享想法</p>
+            <a href="#about" class="scroll-indicator">向下滚动</a>
+        </div>
+    </section>
 
-    <div class="container">
-        <h2>关于我</h2>
-        <!-- 这里的图片路径假设你把照片放在 assets/images/me.jpg -->
-        <!-- 如果还没放图片，这行会显示裂图，先不管它 -->
-        <!-- <img src="assets/images/me.jpg" alt="我的照片" style="width:150px; border-radius:50%;"> -->
-        
-        <p>你好！我是 gd0823。我是一名 学生哦。</p>
-        <p>这里是我的个人小站，用于记录学习生活和展示项目。</p>
-        
-        <h3>我的简历</h3>
-        <p>如果你对我的经历感兴趣，欢迎下载我的 CV。</p>
-        
-        <!-- 这里链接你的PDF，记得把PDF文件放入 assets/files/ 文件夹 -->
-        <a href="assets/files/my_cv.pdf" class="btn" download>下载我的 CV (PDF)</a>
-        
-        <h3>联系方式</h3>
-        <p>Email: example@email.com</p>
-        <p>GitHub: <a href="https://github.com/gd0823">@gd0823</a></p>
-    </div>
+    <!-- 简介和CV区域 -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>关于我</h2>
+                <p>你好！我是 gd0823，一名热爱学习和技术探索的学生。</p>
+                <p>这是我的个人空间，用于记录学习笔记、分享项目经验，和展示一些有趣的想法。</p>
+                
+                <div class="cv-section">
+                    <h3>我的简历</h3>
+                    <p>对我的经历感兴趣？欢迎下载我的 CV。</p>
+                    <a href="assets/files/my_cv.pdf" class="btn btn-primary" download>
+                        <span class="btn-text">下载 CV (PDF)</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                </div>
 
-    <footer>
-        <p>Copyright &copy; 2025 gd0823</p>
+                <div class="contact-section">
+                    <h3>联系方式</h3>
+                    <div class="contact-links">
+                        <a href="https://github.com/gd0823" class="contact-link">GitHub</a>
+                        <a href="mailto:your-email@example.com" class="contact-link">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 高栋. 保留所有权利。</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
